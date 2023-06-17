@@ -1,7 +1,7 @@
 public class StudentGenericDemo {
     public static void main(String[] args) {
-        GenericStudent<String , String , Integer , Integer> s1 = new GenericStudent<String , String , Integer , Integer>("Arpit", "Sahu",  001, 211111111);
-        System.out.println(s1.getFirstname());
+        GenericStudent<String , String , Integer , Integer> s1 = new GenericStudent<>("Arpit", "Sahu", 1, 211111111);
+        System.out.println(s1);
     }
 }
 class GenericStudent<FirstName ,LastName ,RollNo, PhoneNumber>{
@@ -31,5 +31,12 @@ class GenericStudent<FirstName ,LastName ,RollNo, PhoneNumber>{
     public RollNo getRollno() {
         return r;
     }
+
+    @Override
+    public String toString() {
+        return "Name: "+ f + ", title: " + l + ", RollNo:  " + r + ", Phone Number: " + p  ;
+    }
 }
 //We generally don't use generic classes
+
+//Create a car generic class with 5 parameters : Car brand , Car type , Car name , Price , Color ; Assignment create with encapsulated classes and override the string function
