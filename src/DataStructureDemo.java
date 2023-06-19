@@ -15,6 +15,7 @@ public class DataStructureDemo {
 
     }
 }
+//why custom object
 class Actors{
     String name;
     String popularMovie;
@@ -44,3 +45,5 @@ class Actors{
     }
 }
 //Data structure is a way to store and organize data
+// custom data structure
+// linked list , ciircular linked list, doubly linked list, doubly circular linked list, stack , queue Alogorithms of these , Hashmaps ; Java 8 features
