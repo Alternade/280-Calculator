@@ -2,12 +2,15 @@ public class CustomLinkedList2 {
     class Node{
         int data;
         Node next;
+
+
         public Node(int data){
             this.data = data;
             this.next = null;
         }
     }
     Node head = null;
+
     public void add(int data){
         Node newNode = new Node(data);
         if(head == null){
@@ -19,6 +22,7 @@ public class CustomLinkedList2 {
                 last = last.next;
             }
             last.next = newNode;
+            newNode.next = null;
         }
     }
     public void display(){
@@ -29,6 +33,7 @@ public class CustomLinkedList2 {
         }
     }
 
+
 }
 class List2{
     public static void main(String[] args) {
@@ -37,5 +42,7 @@ class List2{
         list1.add(20);
         list1.add(30);
         list1.display();
+        list1.display();
     }
 }
+// is to learn doubly linked list and circular linked list -Assignment
