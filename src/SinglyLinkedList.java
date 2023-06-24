@@ -1,5 +1,5 @@
 public class SinglyLinkedList {
-    class Node{
+    static class Node{
         int value;
         Node next;
         Node(int d){
