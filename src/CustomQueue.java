@@ -81,4 +81,4 @@ public class CustomQueue {
         queue1.dequeue();
     }
 }
-//Assignment 29-6-23 =- Write a custom queue which have the capability to add a student and remove a student.Student is custom datatype -roll NAme  age phn no email . Add 10 students to your queue and remove 6 student from the queue after adding your students. Display all the remaining students name and phone number.crud operations
+
