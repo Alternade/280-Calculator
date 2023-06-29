@@ -14,14 +14,13 @@ public class CustomStack {
         }
 
 
-    public void isFull(){
-        if(top == capacity-1){
-            System.out.println("Stack is full");
-        }
+    public boolean isFull() {
+        return top == capacity-1;
     }
+
     //push function is used to add any element at the top position of stack
     public void push(int a) {
-        if(top == capacity-1){
+        if(isFull()){
             System.out.println("Stack is full");
         }else{
             //incrementing the top because our element will be sitting upont the top
@@ -32,7 +31,7 @@ public class CustomStack {
     }
     //pop function is to remove the topmost element from the stack
     public void pop(){
-        if(top == -1){
+        if(isEmpty()){
             System.out.println("Stack is empty");
         }else{
             System.out.println("Element is poping:  " + arr[top]);
@@ -43,7 +42,7 @@ public class CustomStack {
     }
     //peek function is used to display the top mosty element in the stack
     public void peek(){
-        if(top == -1){
+        if(isEmpty()){
             System.out.println("Stack is empty");
         }else {
             System.out.println(arr[top]);
