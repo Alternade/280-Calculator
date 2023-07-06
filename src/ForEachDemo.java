@@ -34,15 +34,18 @@ public class ForEachDemo {
         //We convert our map into a set and we take a set element as reference
         for(Map.Entry<String,Items> i : list1.entrySet()){
             if(i.getValue().brand.equalsIgnoreCase(value)){
-                System.out.println(i.getValue());
-                counter++;
+                list1.remove(i.getKey());
+                break;
             }
         }
-        if(counter == 0){
-            System.out.println("Element not found");
-        }else{
-            System.out.println("Number of element found = " +counter);
+        for(Map.Entry<String,Items> i : list1.entrySet()){
+            System.out.println(i);
         }
+//        if(counter == 0){
+//            System.out.println("Element not found");
+//        }else{
+//            System.out.println("Number of element found = " +counter);
+//        }
     }
 }
 class Items{
