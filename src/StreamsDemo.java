@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Comparator;
 
 
 public class StreamsDemo {
@@ -21,14 +22,15 @@ public class StreamsDemo {
         a1.add(m6);
         a1.add(m7);
 
-        a1.stream().filter(i-> i.price>20000).forEach(i-> System.out.println(i));
+        //extra
+        a1.stream().filter(i-> i.price>20000).sorted(Comparator.comparing(i -> i.brand)).forEach(i-> System.out.println(i));
                 System.out.println();
     }
 }
 class Mobile{
     String brand;
     String model;
-    int price;
+    Integer price;
 
     public Mobile(String brand, String model, int price) {
         this.brand = brand;
