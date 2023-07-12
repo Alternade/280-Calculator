@@ -4,6 +4,7 @@ import java.util.regex.Pattern;
 public class RegexDemo
 {
     public static void main(String[] args) {
+        String s1 = "Hi";
         Pattern pattern = Pattern.compile("[+](91)-[6-9][0-9]{9}$");
         Matcher m1 = pattern.matcher("+91-7978214560");
         Matcher m2 = pattern.matcher("bye");

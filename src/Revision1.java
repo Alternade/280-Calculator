@@ -9,6 +9,7 @@ class Revision1{
         String s4 = new String("Hi");
         String s5 = new String("Bye");
         String s6 = "see ya";
+        final String s10 = "Hello world";
 
 
     }
